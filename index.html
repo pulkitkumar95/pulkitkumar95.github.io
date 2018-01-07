@@ -1,1 +1,279 @@
-Hello World
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta name=viewport content=“width=800”>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+    papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 32px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="seal_icon.png">
+  <title>Pulkit Kumar</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="67%" valign="middle">
+        <p align="center">
+          <name>Pulkit Kumar</name>
+        </p>
+        <p>I am a research scientist at <a href="https://paralleldots.xyz/">ParallelDots</a>, where I work mainly on medical imaging diagnosis through deep learning. I am also a research assiatant under <a href ="https://www.iiitd.edu.in/~chetan/"> Dr. Chetan Arora </a> and <a href="https://www.iiitd.ac.in/anubha"> Dr. Anubha Gupta </a> at <a href="https://www.iiitd.ac.in"> IIIT, Delhi </a> where i am exploring the amalgation of computer vision with deep learning in medical domain.
+        </p>
+        <p>
+          I did my bachelors at <a href="http://www.nsit.ac.in"> Netaji Subhas Institute of Technology, New Delhi </a> in Information Technology, where I was advised by <a href="http://www.nsit.ac.in/faculty/ag/"> Dr. Anand Gupta </a> in my Bachelor Thesis Project. During my junior and senior year, I split my time studying at <a href="http://www.nsit.ac.in"> NSIT </a> and interning with the amazing team at <a href="https://paralleldots.xyz/">ParallelDots.
+        </p>
+        <p align=center>
+          <a href="mailto:pulkitkumar95@gmail.com">Email</a> &nbsp/&nbsp
+          <a href="PulkitKumar-CV.pdf">CV</a> &nbsp/&nbsp
+          <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=1&gmla=AJsN-F7_r3z11Pbtw4KrtHjNtDypAfGAOo2yEsJV19W7wf2iqUnaeK0nzamgbrJ9ChcNnhK-NroWN0ma6LlTSUmkeEnnKw06hIQYW3hnRAfHOuSZ1YtroZM&user=4rfxBJQAAAAJ">Google Scholar</a> &nbsp/&nbsp
+          <a href="https://www.linkedin.com/in/pulkit-kumar-5aa41076/"> LinkedIn </a>
+        </p>
+        </td>
+        <td width="33%">
+        <img src="pulkit.png", height="280", width="280">
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="100%" valign="middle">
+          <heading>Research</heading>
+          <!-- <p>
+          I'm interested in computer vision, machine learning, statistics, optimization, image processing, virtual reality, and computational photography. Much of my research is about inferring the physical world (shape, depth, motion, paint, light, colors, etc) from images. I have also worked in astronomy and biology. Representative papers are <span class="highlight">highlighted</span>.
+          </p> -->
+        </td>
+      </tr>
+      </table>
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+    <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" >
+      <td width="25%">
+        <div class="one">
+        <div class="two" id = 'aperture_image'><img src='chest_xray.png' , height="125", width ="175" ></div>
+        <img src='chest_xray.png' , height="125", width ="175" >
+        </div>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+	  <a href="https://arxiv.org/abs/1711.08760">
+            <papertitle>Boosted Cascaded Convnets for Multilabel Classification of Thoracic Diseases in Chest Radiographs</papertitle>
+	  </a>
+	  <br>
+	  <strong>Pulkit Kumar<msup>*</msup> </strong>, Monika Grewal<msup>*</msup>, 
+          <a href="https://www.linkedin.com/in/muktabh/">Muktabh M. Srivastava</a>
+	 
+	   <br>
+        <em>arXiv Preprint</em>, 2017 <br>
+        <p></p>
+        <p>Combining boosting and cascading with DenseNets to detect all the pathologies in the Chest X-Ray 8 dataset.</p>
+      </td>
+    </tr>
+		
+    <tr onmouseout="deepburst_stop()" onmouseover="deepburst_start()" >
+      <td width="25%">
+        <div class="one">
+        <div class="two" id = 'deepburst_image'><img src='radnet.gif' , height="125", width ="175" ></div>
+        <img src='radnet.gif', height="125", width ="175">
+        </div>
+        <script type="text/javascript">
+        function deepburst_start() {
+        document.getElementById('deepburst_image').style.opacity = "1";
+        }
+        function deepburst_stop() {
+        document.getElementById('deepburst_image').style.opacity = "0";
+        }
+        deepburst_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <a href="https://arxiv.org/abs/1710.04934">
+        <papertitle>RADNET: Radiologist level accuracy using deep learning for hemorrhage detection in CT scans</papertitle>
+        </a>
+        <br>
+       Monika Grewal, 
+    	<a href="https://www.linkedin.com/in/muktabh/">Muktabh M. Srivastava</a>, 
+    	<strong>Pulkit Kumar</strong><msup>*</msup> , 
+    	Srikrishna Varadarajan <msup>*</msup>
+        <em>International Symposium of Biomedical Imaging (ISBI)</em>, 2018 <br>
+        <p></p>
+        <p>A Deep Learning model combining DenseNets with attention and LSTMs to detect haemorrhage from brain CT scans which matches the accuracy of senior radiologists.</p>
+      </td>
+    </tr>
+	  
+    <tr onmouseout="friendly_stop()" onmouseover="friendly_start()" >
+      <td width="25%">
+        <div class="one">
+        <div class="two" id = 'friendly_image'><img src='brainct.png' , height="125", width ="175" ></div>
+        <img src='brainct.png', height="125", width ="175">
+        </div>
+        <script type="text/javascript">
+        function friendly_start() {
+        document.getElementById('friendly_image').style.opacity = "1";
+        }
+        function friendly_stop() {
+        document.getElementById('friendly_image').style.opacity = "0";
+        }
+        friendly_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="https://arxiv.org/abs/1710.09180">
+        <papertitle>Anatomical labeling of brain CT scan anomalies using multi-context nearest neighbor relation networks</papertitle></a><br>
+           Srikrishna Varadarajan, 
+    	<a href="https://www.linkedin.com/in/muktabh/">Muktabh M. Srivastava</a>, Monika Grewal<msup>*</msup>,
+    	<strong>Pulkit Kumar</strong><msup>*</msup> <br>
+    	 
+        <em>Poster in International Symposium of Biomedical Imaging (ISBI)</em>, 2018 <br>
+        <p></p>
+        <a href="">blog</a>
+        <p></p>
+        <p>Used multi-context feature embeddings from a pre-trained VGG model with nearest neighbours to train RelationNets for anatomic labelling in brain CT Scans..</p>
+      </td>
+    </tr>
+
+    <tr onmouseout="hdrnet_stop()" onmouseover="hdrnet_start()" >
+      <td width="25%">
+        <div class="one">
+        <div class="two" id = 'hdrnet_image'><img src='boosted.png' , height="125", width ="175" ></div>
+        <img src='boosted.png' , height="125", width ="175" >
+        </div>
+        <script type="text/javascript">
+        function hdrnet_start() {
+        document.getElementById('hdrnet_image').style.opacity = "1";
+        }
+        function hdrnet_stop() {
+        document.getElementById('hdrnet_image').style.opacity = "0";
+        }
+        hdrnet_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="https://arxiv.org/abs/1711.09279">
+        <papertitle>A Big Data Analysis Framework Using Apache Spark and Deep Learning</papertitle></a><br>
+          <a href="http://www.nsit.ac.in/faculty/ag/">Anand Gupta</a>, Hardeo Thakur, <a href="http://ritvikshrivastava.github.io">Ritvik Shrivastava</a>, <strong>Pulkit Kumar</strong>, Sreyashi Nag<br>
+        <em>Internation Conference of Data Mining (ICDM) workshop on Data Science and Big Data Analytics (DSBDA)</em>, 2017 <br>
+        <p></p>
+        <p>A cascaded approach to predict the approval of H-1B visas on factors such as qualification, salary, location of job etc.</p>
+      </td>
+    </tr>
+
+    
+     
+      </table>
+      <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td>
+        <heading>Teaching</heading>
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellpadding="20">
+      <tr>
+        <td width="25%"><img src="pacman.jpg" alt="pacman" width="160" height="160"></td>
+        <td width="75%" valign="center">
+        <p>
+          <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
+          <papertitle>CS188 - Fall 2010 (GSI)</papertitle>
+          </a>
+          <br><br>
+          <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">
+          <papertitle>CS188 - Spring 2011 (GSI)</papertitle>
+          </a>
+          <br>
+        </p>
+        </td>
+      </tr>
+      </table> -->
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td>
+        <br>
+        <p align="right">
+          <font size="2">
+          <a href="https://jonbarron.info"> This guy is a life saver.</a>
+          <!-- http://www.cs.princeton.edu/~namana/ http://people.csail.mit.edu/janner/ http://www.sjoerdvansteenkiste.com/ http://joaoloula.github.io/ https://bhairavmehta95.github.io/ http://www2.informatik.uni-freiburg.de/~palmieri/ https://psuriana.github.io/ http://home.iitb.ac.in/~devangthakkar/ http://yushi2.web.engr.illinois.edu/ http://ruthcfong.github.io/ https://shraman-rc.github.io/-->
+	    </font>
+        </p>
+        </td>
+      </tr>
+      </table>
+      <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+      </script> <script type="text/javascript">
+      try {
+          var pageTracker = _gat._getTracker("UA-7580334-1");
+          pageTracker._trackPageview();
+          } catch(err) {}
+      </script>
+    </td>
+    </tr>
+  </table>
+  </body>
+</html>
